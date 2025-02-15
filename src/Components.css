@@ -1,0 +1,691 @@
+
+/*** Spinner Start ***/
+
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #151414;
+    
+ }
+
+ .ring{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+ }
+
+ @keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+ }
+
+ .ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+ }
+
+ .load_span{
+    color: #737373;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: text 2s ease-in-out infinite;
+ }
+
+ @keyframes text {
+    50%{
+        color: #e65c00;
+    }
+ }
+
+/*** Spinner End ***/
+
+
+.MuiBox-root .topbar-custom {
+    /* height: 40px; */
+    /* padding: 10px 0px; */
+    background-color: rgba(84, 80, 80, 0.89);
+}
+
+.nav_logo {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    max-width: 150px;
+}
+
+.MuiBox-root .navbar-custom {
+    background-color: rgba(16, 16, 16, 0.92);
+    /* height: 90px; */
+    padding: 10px 0px;
+    position: relative;
+    z-index: auto;
+    top: auto;
+    min-height: 84px;
+}
+
+.MuiBox-root .navbar-custom .MuiToolbar-root .MuiTypography-h6 {
+    color: rgb(183, 122, 10);
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+}
+
+.MuiBox-root .MuiBox-root .MuiTypography-h5 {
+    color: rgb(255, 77, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.MuiBox-root .MuiBox-root .MuiTypography-h2 {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.banner_head {
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner_para {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #151414;
+}
+.common-sec-gap{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* .about_container{
+    margin: 150px 0px 70px 0px; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: end;
+} */
+.about_container .about_text {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.about_container .about_head{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: rgb(183, 122, 10);
+}
+.about_container .about_para{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.choose_container{
+    background-color: #f5ebeb;
+}
+
+.about_reason{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 800 !important;
+    color: rgb(156, 106, 13);
+    text-align: center;
+}
+
+.about_reasonlist_box{
+    padding: 70px 0px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about_reasonlist_box .about_reasonlist{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(243, 170, 35);
+}
+
+/* .service_container{
+    margin-bottom: 100px;
+} */
+
+.service_container .service_head{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(183, 122, 10);
+}
+
+.service_container .service_card{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.service_container .service_row{
+    --service-colgap:30px;
+   column-gap: var(--service-colgap);
+}
+.service_container .service_row>*{
+    max-width: calc(33.33% - var(--service-colgap)*2 /3);
+    width: 100%;
+    flex: 0 0 100%;
+}
+.service_card .image_wrap{
+    overflow: hidden;
+}
+.service_card .image_wrap img{
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.service_card:hover .image_wrap img{
+    transform: scale(1.05);
+}
+
+.service_container .service_card .service_name{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* about */
+.about_text_custom{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #f3eaea;
+    font-weight: 800 !important;
+}
+
+/* pricing */
+.heading_text_custom{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #282626;
+    font-weight: 800 !important;
+}
+
+.price_grade_container{
+    max-width: 700px;
+    padding: 70px;
+}
+
+.price_card{
+    position: relative;
+    transition: all 0.3s;
+}
+.price_card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/price_card_bg.jpg");
+    background-position: center;
+    opacity: 0.6;
+}
+
+.price_card .price_card_content{
+    position: relative;
+    z-index: 2;
+}
+.price_card:hover{
+    transform: scale(1.05);
+}
+
+.price_grade_container .price_grade_card{
+    background-image: linear-gradient(to right, rgba(255, 217, 0, 0.564), rgba(255,255,255,0.89));
+}
+
+.price_grade_container .price_grade_head{
+    color: rgb(183, 122, 10);
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.price_grade_container .price_grade_para{
+    text-align: center;
+    font-size: 15px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    color: #000;
+}
+
+.price_grade_container .price_para{
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+
+.price_grade_container .btn_link .grade_btn{
+    background-color: rgb(66, 57, 38);
+    text-align: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto !important;
+}
+
+.titaniumback_container{
+    padding-bottom: 80px;
+}
+
+.titaniumback_container .titaniumback_btn{
+    background-color: rgb(66, 57, 38);
+    text-align: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto !important;
+}
+
+.page-header-text-box .grade_type_head_custom{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: #ccc;
+}
+
+.gallery_container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.gallery_container .slick-list{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.gallery_container .slick-slide{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gallery_container .card img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+.gallery_container .card:hover img{
+    transform: scale(1.05);
+}
+.gallery_container .slick-arrow{
+    width: 40px;
+    height: 40px;
+    background: #fff !important;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e4990f;
+    z-index: 2;
+    box-shadow: -8px 7px 25px -10px #2a3640;
+    opacity: 0.75;
+    transition: all 0.3s;
+}
+.gallery_container .slick-arrow:hover{
+    opacity: 1;
+}
+.gallery_container .slick-prev:before, .gallery_container .slick-next:before{
+    content: "";
+    width:16px;
+    height: 16px;
+    font-size: 0;
+    display: inline-block;
+}
+.gallery_container .slick-prev:before{
+    background-image: url('../public/left-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.gallery_container .slick-next:before{
+    background-image: url('../public/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+}
+.gallery_container h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(183, 122, 10);
+}
+
+
+
+.contact .info-wrap {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 150px;
+  }
+  
+  .contact .info {
+    background: #fff;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: rgb(183, 122, 10);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgb(183, 122, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #111;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #444444;
+  }
+  
+  .contact .info:hover i {
+    background: rgb(183, 122, 10);
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: rgb(183, 122, 10);
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid rgb(183, 122, 10);
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    border-color: rgb(183, 122, 10);
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type="submit"] {
+    background: rgb(183, 122, 10);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form button[type="submit"]:hover {
+    background: rgb(183, 122, 10);
+  }
+
+
+/* footer part */
+.footer-section {
+    background: #151414;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.footer-cta {
+    border-bottom: 1px solid #373636;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer-widget {
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-widget h4 {
+    /* border-bottom: 1px solid #ff5e14; */
+    color: #fff;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.footer-widget h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: rgb(183, 122, 10);
+}
+
+.list-item {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.link_footer{
+    color: #ccc;
+    text-decoration: none;
+}
+.link_footer:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.opening_hrs{
+    color: #ccc !important;
+    font-size: 25px !important;
+    margin: 0 !important;
+}
+.opening_hrs_list{
+    color: #ccc;
+    margin: 10px 0px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width:1199px){
+    .banner_head{
+        font-size: clamp(30px,12vw, 70px);
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    .banner_para{
+        font-size:20px;
+        color: #fff;
+        line-height: 1.34;
+    }
+    .service_container .service_card .service_name{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:989px){
+    .logo_holder{
+        display: block !important;
+        margin: 0 auto !important;
+    }
+    .nav_logo{
+        position: static;
+        max-width: 80px;
+    }
+    .banner_content img{
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .service_container .service_row{
+        --service-colgap: 20px;
+    }
+    .service_container .service_row>* {
+        max-width: calc(50% - var(--service-colgap)*1 /2);
+        width: 100%;
+    }
+    .gallery_container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .nav_logo{
+        max-width: 60px;
+    }
+    .navbar-custom-toolbar{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .nav-toggle-btn {
+        width: 30px;
+        height: 30px;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    .contact_btn_area{
+        border-left: 0 !important;
+        padding-left: 10px !important;
+        text-align: right;
+    }
+    .contact_btn_area  button {
+        font-size: 11px;
+        line-height: 1.2;
+        padding: 10px 10px;
+    }
+    .contact_btn_area button svg{
+        display: none;
+    }
+    .common-sec-gap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about_container .about_text{
+        text-align: left;
+        padding: 0 0 30px 0;
+    }
+    .service_container .service_row>*{
+        max-width: 100%;
+    }
+
+    .heading_text_custom{
+        display: flex;
+        justify-content: center;
+        color: #ccc;
+    }
+    .css-1uwp4ue-MuiBreadcrumbs-ol{
+        display: flex;
+        justify-content: center;
+    }
+    .price_grade_container .price_grade_head{
+        font-size: 30px;
+    }
+}
