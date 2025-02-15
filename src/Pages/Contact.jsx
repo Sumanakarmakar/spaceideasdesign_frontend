@@ -1,6 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import React from "react";
-import { contactPost } from "../Api/Functions/contact.api";
+import { contactPost } from "../Api/Functions/Contact.api";
 import Swal from "sweetalert2";
 import ButtonLoader from "../Loader/ButtonLoader";
 import { useForm } from "react-hook-form";
